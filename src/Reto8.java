@@ -46,21 +46,29 @@ public class Reto8 {
     System.out.println("ingrese el valor con el que pagara");
     pagodc=lectura.nextInt();
     cantidad=pagodc-totalc;
+    System.out.println("usted pagara "+totalc+ "con un monto de "+pagodc+ "su cambio es "+cantidad);
     }
     else if (acumulador>=50000 && bolita==3) {valdesc=(acumulador*50)/100; totalc=acumulador-valdesc;
     System.out.println("felicidades has ganado un descuento del 50% por sacas una bolita amarilla:D, el valor de su compra con el descuento integrado es de "+totalc);
     System.out.println("ingrese el valor con el que pagara");
     pagodc=lectura.nextInt();
     cantidad=pagodc-totalc;
+    System.out.println("usted pagara "+totalc+ "con un monto de "+pagodc+ "su cambio es "+cantidad);
+    
     }
     else if (acumulador>=50000 && bolita==4) {valdesc=(acumulador*100)/100; totalc=acumulador-valdesc;
     System.out.println("felicidades has ganado un descuento del 100% por sacas una bolita blanca:D, el valor de su compra con el descuento integrado es de "+totalc);
+
     System.out.println("ingrese el valor con el que pagara");
     pagodc=lectura.nextInt();
     cantidad=pagodc-totalc;
+    System.out.println("usted pagara "+totalc+ "con un monto de "+pagodc+ "su cambio es "+cantidad);
     }
     else {
         System.out.println("nada bro no hay descuento");
     }
+
+
+    
 }
 }

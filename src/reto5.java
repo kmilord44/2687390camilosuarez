@@ -12,7 +12,7 @@ public class reto5 {
     System.out.println("su nombre tiene una logitud de "+nombre.length()+" letras y su apellido una longitud de "+apellido.length()+" letras");
     System.out.println("su nombre completo es "+nombrec);
     System.out.println("su nombre es "+nombre.toUpperCase()+" "+apellido.toLowerCase());
-    System.out.println(nombre.substring(0, 2)+apellido);
+    System.out.println(nombre.substring(0, 3)+apellido);
     lectura.close();
     }
 

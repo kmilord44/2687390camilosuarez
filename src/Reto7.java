@@ -2,13 +2,27 @@ import java.util.Scanner;
 public class Reto7 {
     public static void main(String[] args) {
     Scanner lectura = new Scanner(System.in);
-    int valcompra, valdesc, bolita, totalc;
-
-    System.out.println("ingrese el valor de la compra");
-    valcompra=lectura.nextInt();
+    int valcompra, valdesc, bolita, totalc, numdecompras, valcomprauni,continuar, acumulador;
+    continuar=1;
     valdesc=0;
-    bolita=( (int)(Math.random()*4+1)    );
+ 
+    do {
+    System.out.println("ingrese el valor del producto");
+    valcomprauni=lectura.nextInt();
 
+    System.out.println("ingrese cantidad de productos a comprar");
+    numdecompras=lectura.nextInt();        
+    
+    System.out.println("otro producto? 1 si 2 no");
+    continuar=lectura.nextInt();
+    
+    } while (continuar==1); {
+
+    valcompra=(numdecompras*valcomprauni);
+    
+    //descuento//
+    bolita=( (int)(Math.random()*4+1)    );
+    
     if (valcompra>=50000 && bolita==1) {valdesc=(valcompra*10)/100; totalc=valcompra-valdesc;
     System.out.println("felicidades has ganado un descuento del 10% por sacas una bolita roja:D, el valor de su compra con el descuento integrado es de "+totalc);
     }
@@ -24,5 +38,12 @@ public class Reto7 {
     else {
         System.out.println("nada bro no hay descuento");
     }
+
+
 }
+
+
+    }
 }
+
+
